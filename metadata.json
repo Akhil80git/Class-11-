@@ -1,0 +1,6 @@
+{
+  "name": "कक्षा 11 हिंदी - संपूर्ण NCERT अध्ययन एवं प्रश्नोत्तर",
+  "description": "कक्षा 11 हिंदी (आरोह, वितान, अंतरा, अंतराल) के सभी अध्यायों की संपूर्ण कहानियां, विस्तृत सारांश और NCERT पाठ्यपुस्तक के सभी प्रश्न-उत्तर।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

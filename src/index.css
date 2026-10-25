@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Rozha One', 'Noto Sans Devanagari', serif;
+  }
+
+  .font-hindi-body {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  .font-poetry {
+    font-family: 'Tiro Devanagari Hindi', 'Noto Sans Devanagari', serif;
+  }
+}
+
+/* Print Styles for Attractive Colorful PDFs */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Hide interactive web chrome during print */
+  nav, header, footer, .no-print, button:not(.print-include), .non-printable {
+    display: none !important;
+  }
+
+  /* Show only print container if active */
+  .printable-area {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .page-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .page-break-inside-avoid {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure colors and backgrounds print faithfully */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
